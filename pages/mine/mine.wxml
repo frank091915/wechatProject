@@ -1,0 +1,6 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view wx:if="{{!ifRendered}}">render</view>
+  <view wx:else>don't render</view>
+  <view ></view>
+</view>

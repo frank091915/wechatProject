@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<view 
+  bindtap='handleClick' 
+  wx:for="{{todos}}" 
+  wx:for-item="todo"
+  wx:key="{{todo.id}}"
+  class='todoItem'
+  bindtouchmove='handleMove'
+  bindtouchstart='handleTouchStart'
+  style='left:changedLeft'
+> 
+  {{todo.task}}
+  <div class="toDelete">删除</div>
+</view>
+{{changedLeft}}
