@@ -1,4 +1,4 @@
-// pages/item/item.js
+// pages/mall/mall.js
 Page({
 
   /**
@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  toItem(){
+    wx.navigateTo({
+      url: '../item/item'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

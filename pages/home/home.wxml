@@ -1,15 +1,12 @@
-<!--pages/home/home.wxml-->
-<view 
-  bindtap='handleClick' 
-  wx:for="{{todos}}" 
-  wx:for-item="todo"
-  wx:key="{{todo.id}}"
-  class='todoItem'
-  bindtouchmove='handleMove'
-  bindtouchstart='handleTouchStart'
-  style='left:changedLeft'
-> 
-  {{todo.task}}
-  <div class="toDelete">删除</div>
+<!--pages/item/item.wxml-->
+<view class='searchBar'>
+  <view class='locationBox'>
+    定位中...
+  </view>
+  <view class='homepageSearchBox' >
+    <view class='homepageSearchInput'>
+    请输入关键词...
+    </view>
+    <view class='homepageSearchText'>搜索</view>
+  </view>
 </view>
-{{changedLeft}}

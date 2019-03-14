@@ -1,2 +1,3 @@
-<!--pages/item/item.wxml-->
-<text>pages/item/item.wxml</text>
+<!--pages/mall/mall.wxml-->
+<text>pages/mall/mall.wxml</text>
+<view bindtap='toItem'>产品1</view>

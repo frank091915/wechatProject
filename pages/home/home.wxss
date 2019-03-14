@@ -1,18 +1,29 @@
-/* pages/home/home.wxss */
-.todoItem{
-  border-bottom: solid 1px #ff0000;
-  margin-top: 5rpx;
-  width: calc(850rpx);
+/* pages/item/item.wxss */
+.searchBar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  left: 0;
-  padding-left: 80rpx;
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
 }
-.toDelete{
+.locationBox{
+  width: 150rpx;
+  text-align: center;
+}
+.homepageSearchBox{
+  flex: 1;
+  display: flex;
+  flex-direction:row;
+}
+.homepageSearchInput{
+  background-color: #e0f7fa;
+  flex: 1;
+  text-align: center;
+  
+}
+.homepageSearchText{
+  background-color: #f3f7f7;
   width: 80rpx;
-  background-color: #ff0000;
-  color: white;
   text-align: center;
 }

@@ -1,40 +1,11 @@
-// pages/home/home.js
+// pages/item/item.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  // handleClick(e){
-  //   console.log(e)
-  // },
-  handleMove(e){
-    const changedClientX = 
-      e.changedTouches[0].clientX - this.clientX
-    console.log(changedClientX)
-    this.setData({
-      changedLeft: `${changedClientX}rpx`
-    })
-  }, 
-  handleTouchStart(e){
-    this.clientX = e.changedTouches[0].clientX
-    console.log(this.clientX)
-  },
   data: {
-    todos: [
-      {
-        id: 1,
-        task: "观察"
-      },
-      {
-        id: 2,
-        task: "练习"
-      },
-      {
-        id: 3,
-        task: "复习"
-      }
-    ],
-    changedLeft:0
+
   },
 
   /**

@@ -1,2 +1,32 @@
-<!--pages/mall/mall.wxml-->
-<text>pages/mall/mall.wxml</text>
+<!--pages/home/home.wxml-->
+<view class='slideBar'>
+  <view 
+    class='cateItem {{item.id == choosencategoryid ? "active" : ""}}'
+    wx:for="{{category}}"
+    wx:key="{{item.id}}"
+    data-choosenCategoryId='{{item.id}}'
+    bindtap='chooseCategory'
+   >{{item.name}}</view>
+   
+</view> 
+<scroll-view
+class='itemsBox'
+scroll-y
+bindscrolltoupper="scrolltoupper"
+bindscrolltolower="scrolltolower"
+>
+  <view 
+  class='singleItem'
+  wx:for="{{list}}"
+  wx:key="item.id"
+  >
+  <image
+    src='{{item.image}}'
+  ></image>
+  <view>
+    {{item.title}}
+  </view>
+  
+  </view>
+</scroll-view> 
+
